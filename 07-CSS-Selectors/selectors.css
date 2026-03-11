@@ -1,0 +1,38 @@
+h1 {
+    color: cornflowerblue;
+}
+
+p {
+    font-size: 24px;
+}
+
+#head1 {
+    background-color: black;
+    color: aqua;
+}
+
+.para {
+    color: blueviolet;
+    font-size: 24px;
+}
+
+div, p {
+    color: coral;
+    font-size: 24px;
+}
+
+button {
+    height: 20px;
+    width: 70px;
+    background-color: brown;
+    color: antiquewhite;
+}
+
+button:hover {
+    background-color: cadetblue;
+}
+
+#ptag::first-letter {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
