@@ -1,0 +1,17 @@
+.box {
+    width: 200px;
+    margin: 20px 10px 20px 40px;
+}
+
+.padding {
+    padding: 40px 20px 30px 50px;
+}
+
+.border {
+    border: 2px dashed red;
+}
+
+.boxsizing {
+    width: 170px;
+    
+}
