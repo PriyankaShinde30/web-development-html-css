@@ -1,12 +1,23 @@
-.container { 
-    display: grid;
-    border: 2px solid black;
-    gap: 10px;
-    grid-template-areas: "header header" "sidebar sidebar" "content content" "footer footer";
-    grid-template-columns: 1fr 2fr;
-}   
+.container {
+  display: grid;
+  border: 2px solid black;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
 
-.header { grid-area: header; background: red;}
-.sidebar { grid-area: sidebar; background: blue;}
-.content { grid-area: content; background: pink;}
-.footer { grid-area: footer; background: purple;}
+.box {
+  background: teal;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.box:nth-child(1) {
+  grid-column: span 3;
+  background: orange;
+}
+
+.box:nth-child(2) {
+  grid-row: span 2;
+  background: crimson;
+}
