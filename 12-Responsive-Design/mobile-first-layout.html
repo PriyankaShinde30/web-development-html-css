@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mobile First Layout</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+
+      .box {
+        background-color: teal;
+        color: white;
+        padding: 20px;
+        margin: 5px;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Mobile First Layout</h2>
+
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+  </body>
+</html>
