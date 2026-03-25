@@ -1,0 +1,45 @@
+.box { 
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 10px;
+}
+
+.transition-box {
+    transition: all 0.3s ease;
+}
+
+.transition-box:hover {
+    background-color: crimson;
+}
+
+.transform-box:hover {
+    transform: rotate(45deg);
+}
+
+@keyframes moveBox { 
+    0% { transform: translateX(0);}
+    100% { transform: translateX(200px);}
+}
+
+.animate { 
+    animation: moveBox 2s infinite alternate;
+}
+
+.spinner { 
+    height: 50px;
+    width: 50px;
+    border: 5px solid lightgray;
+    border-top: 5px solid teal;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg);}
+}
